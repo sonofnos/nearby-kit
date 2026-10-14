@@ -1,0 +1,41 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build-and-test:
+    runs-on: macos-15
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+
+      - name: Kotlin Multiplatform unit tests
+        run: ./gradlew :shared:iosSimulatorArm64Test --no-daemon
+
+      - name: Build iOS app for simulator
+        run: |
+          cd NearbyKit
+          xcodebuild build \
+            -project NearbyKit.xcodeproj \
+            -scheme NearbyKit \
+            -destination 'platform=iOS Simulator,name=iPhone 16' \
+            CODE_SIGNING_ALLOWED=NO
+
+      - name: Run Swift unit tests
+        run: |
+          cd NearbyKit
+          xcodebuild test \
+            -project NearbyKit.xcodeproj \
+            -scheme NearbyKit \
+            -destination 'platform=iOS Simulator,name=iPhone 16' \
+            CODE_SIGNING_ALLOWED=NO

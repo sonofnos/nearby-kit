@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>NearbyKit advertises itself over Bluetooth and scans for other nearby NearbyKit devices to show approximate distance.</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>NearbyKit advertises itself over Bluetooth so other nearby devices can discover it.</string>
+	<key>NSBonjourServices</key>
+	<array>
+		<string>_nearbykit-ni._tcp</string>
+		<string>_nearbykit-ni._udp</string>
+	</array>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>NearbyKit uses the local network to exchange ranging information with a nearby device.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>NearbyKit shows your distance to nearby points of interest on the map while you're using the app.</string>
+	<key>NSNearbyInteractionUsageDescription</key>
+	<string>NearbyKit uses Ultra Wideband to measure precise distance and direction to another nearby device.</string>
+	<key>UILaunchScreen</key>
+	<dict/>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+</dict>
+</plist>

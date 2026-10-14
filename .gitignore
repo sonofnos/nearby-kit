@@ -1,0 +1,16 @@
+# Gradle / Kotlin
+.gradle/
+build/
+shared/build/
+*.hprof
+local.properties
+
+# Xcode
+NearbyKit/build/
+NearbyKit/DerivedData/
+*.xcuserstate
+xcuserdata/
+.DS_Store
+
+# Generated Kotlin/Native framework artifacts embedded at build time
+NearbyKit/*.xcframework/

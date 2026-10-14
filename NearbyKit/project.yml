@@ -1,0 +1,80 @@
+name: NearbyKit
+options:
+  bundleIdPrefix: com.sonofnos.nearbykit
+  deploymentTarget:
+    iOS: "17.0"
+  xcodeVersion: "16.0"
+
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    CODE_SIGNING_REQUIRED: NO
+    CODE_SIGNING_ALLOWED: NO
+    FRAMEWORK_SEARCH_PATHS:
+      - "$(inherited)"
+      - "$(SRCROOT)/../shared/build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)"
+
+targets:
+  NearbyKit:
+    type: application
+    platform: iOS
+    sources:
+      - path: NearbyKit
+    info:
+      path: NearbyKit/Info.plist
+      properties:
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        NSLocationWhenInUseUsageDescription: "NearbyKit shows your distance to nearby points of interest on the map while you're using the app."
+        NSBluetoothAlwaysUsageDescription: "NearbyKit advertises itself over Bluetooth and scans for other nearby NearbyKit devices to show approximate distance."
+        NSBluetoothPeripheralUsageDescription: "NearbyKit advertises itself over Bluetooth so other nearby devices can discover it."
+        NSNearbyInteractionUsageDescription: "NearbyKit uses Ultra Wideband to measure precise distance and direction to another nearby device."
+        NSLocalNetworkUsageDescription: "NearbyKit uses the local network to exchange ranging information with a nearby device."
+        NSBonjourServices:
+          - "_nearbykit-ni._tcp"
+          - "_nearbykit-ni._udp"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.sonofnos.nearbykit.app
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        TARGETED_DEVICE_FAMILY: "1"
+    preBuildScripts:
+      - name: "Build Kotlin shared framework"
+        script: |
+          cd "$SRCROOT/.."
+          # Gradle/Kotlin-Native need an arm64 JVM on Apple Silicon or the
+          # Kotlin Gradle plugin reads the host as x86_64 and silently
+          # disables the iOS-simulator-arm64 build and test tasks. The
+          # Oracle JDK on this machine is an x86_64 build running under
+          # Rosetta; point at a native arm64 JDK if one is on hand.
+          if [ -x /opt/homebrew/Cellar/openjdk@21/21.0.12.1/libexec/openjdk.jdk/Contents/Home/bin/java ]; then
+            export JAVA_HOME=/opt/homebrew/Cellar/openjdk@21/21.0.12.1/libexec/openjdk.jdk/Contents/Home
+          fi
+          ./gradlew :shared:embedAndSignAppleFrameworkForXcode
+        basedOnDependencyAnalysis: false
+
+  NearbyKitTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: NearbyKitTests
+    dependencies:
+      - target: NearbyKit
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.sonofnos.nearbykit.tests
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/NearbyKit.app/NearbyKit"
+        BUNDLE_LOADER: "$(TEST_HOST)"
+
+schemes:
+  NearbyKit:
+    build:
+      targets:
+        NearbyKit: all
+        NearbyKitTests: [test]
+    test:
+      targets:
+        - NearbyKitTests

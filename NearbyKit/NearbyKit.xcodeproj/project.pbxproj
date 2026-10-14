@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E0C706AF0C5E5B5FF6B5CD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 654FE6C24DCC8FA128A94C3D /* Assets.xcassets */; };
+		131EEEA66F0407B2A73DCC1E /* PermissionStatusMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905EFB90B019F69EE7CB4CE0 /* PermissionStatusMapper.swift */; };
+		22F6169A58056B58E601A822 /* PermissionStatusMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4CB380F52CD6B3540E20C1 /* PermissionStatusMapperTests.swift */; };
+		25BBD50251F5213C3CB58796 /* NearbyKitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B53FFEC1909EDAF37049C90 /* NearbyKitApp.swift */; };
+		283584C22A89CD8759DAC316 /* NearbyDeviceStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177EE63F60B32F7E61077844 /* NearbyDeviceStore.swift */; };
+		2A4F499A14EB7EB07391E147 /* BluetoothView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADDA4939C2CE61F5E0BC56 /* BluetoothView.swift */; };
+		2E375D842F203D5D2D454DAC /* UWBSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F94349A7FF1922B924CD86 /* UWBSessionManager.swift */; };
+		56BDEA0F4292C0DFBC17E649 /* DistanceCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34925393EEF951C4433FC1C /* DistanceCalculatorTests.swift */; };
+		5C39BA1538406A0ADCD2AD9A /* NearbyDeviceStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C39038AA2BDB274765B46E /* NearbyDeviceStoreTests.swift */; };
+		ABDDC30ADFBF474E3D43A5BE /* MultipeerTokenChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81106BEB4AC9C5C6F1A4BB61 /* MultipeerTokenChannel.swift */; };
+		AF84805BE08298A54CB65CBD /* BLEPeripheralManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07FA7AE5FB6D0B022359612 /* BLEPeripheralManager.swift */; };
+		B9CFFF30BB8F944CAE0A0856 /* BLECentralManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719AD5FE2CE838A2FD82791E /* BLECentralManager.swift */; };
+		C1B484898E79A29295C1DEB0 /* UWBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3DECB31BC944BA0F880FE8 /* UWBView.swift */; };
+		E6E4D4011CB6F83A24367455 /* PointOfInterest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3840AFE93D49DEC5F451879C /* PointOfInterest.swift */; };
+		F00FB7F61EF6B13E5132C256 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB4AB9B3379627C5B1521DF /* ContentView.swift */; };
+		FCD3998AAA4B9991CD664310 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29380D7B9A000FE164327426 /* LocationView.swift */; };
+		FD0B2E06069045212C945D8E /* BluetoothIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B39BAA0CE5F7F5B53E25B57 /* BluetoothIdentifiers.swift */; };
+		FED646F4DCC9B8BE268E7139 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF62135BAC44D6408265FF74 /* LocationManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F0E69F7BF6C3A8868F3BC5DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B05D9189B8366115B21F7B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65870E75F3C16EDB535B3306;
+			remoteInfo = NearbyKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03F540EC52AA425D384F5044 /* NearbyKitTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = NearbyKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FF4E716F0D0EFB9D32121C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		177EE63F60B32F7E61077844 /* NearbyDeviceStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyDeviceStore.swift; sourceTree = "<group>"; };
+		1B53FFEC1909EDAF37049C90 /* NearbyKitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyKitApp.swift; sourceTree = "<group>"; };
+		29380D7B9A000FE164327426 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
+		3840AFE93D49DEC5F451879C /* PointOfInterest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointOfInterest.swift; sourceTree = "<group>"; };
+		654FE6C24DCC8FA128A94C3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6B39BAA0CE5F7F5B53E25B57 /* BluetoothIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothIdentifiers.swift; sourceTree = "<group>"; };
+		70B822CA0D447F1CDC15C858 /* NearbyKit.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = NearbyKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		719AD5FE2CE838A2FD82791E /* BLECentralManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLECentralManager.swift; sourceTree = "<group>"; };
+		81106BEB4AC9C5C6F1A4BB61 /* MultipeerTokenChannel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipeerTokenChannel.swift; sourceTree = "<group>"; };
+		83C39038AA2BDB274765B46E /* NearbyDeviceStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyDeviceStoreTests.swift; sourceTree = "<group>"; };
+		905EFB90B019F69EE7CB4CE0 /* PermissionStatusMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionStatusMapper.swift; sourceTree = "<group>"; };
+		A1F94349A7FF1922B924CD86 /* UWBSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UWBSessionManager.swift; sourceTree = "<group>"; };
+		AA4CB380F52CD6B3540E20C1 /* PermissionStatusMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionStatusMapperTests.swift; sourceTree = "<group>"; };
+		BD3DECB31BC944BA0F880FE8 /* UWBView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UWBView.swift; sourceTree = "<group>"; };
+		DCB4AB9B3379627C5B1521DF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DEADDA4939C2CE61F5E0BC56 /* BluetoothView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothView.swift; sourceTree = "<group>"; };
+		EF62135BAC44D6408265FF74 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		F07FA7AE5FB6D0B022359612 /* BLEPeripheralManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEPeripheralManager.swift; sourceTree = "<group>"; };
+		F34925393EEF951C4433FC1C /* DistanceCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceCalculatorTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		442518CF3DADB5A9BA96C6EC /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				EF62135BAC44D6408265FF74 /* LocationManager.swift */,
+				905EFB90B019F69EE7CB4CE0 /* PermissionStatusMapper.swift */,
+				3840AFE93D49DEC5F451879C /* PointOfInterest.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		4457EAF12A50AB3ACB13DF19 /* NearbyKit */ = {
+			isa = PBXGroup;
+			children = (
+				0FF4E716F0D0EFB9D32121C3 /* Info.plist */,
+				1B53FFEC1909EDAF37049C90 /* NearbyKitApp.swift */,
+				5DE3F9D9DC68B28CA676813D /* Bluetooth */,
+				442518CF3DADB5A9BA96C6EC /* Location */,
+				CBD3C846F1AB2545621CB0EB /* Resources */,
+				98603225313CA792ED6E6350 /* UWB */,
+				7A8314F42F97C80C470D6445 /* Views */,
+			);
+			path = NearbyKit;
+			sourceTree = "<group>";
+		};
+		50B1F6EDD4E74A903490B08D = {
+			isa = PBXGroup;
+			children = (
+				4457EAF12A50AB3ACB13DF19 /* NearbyKit */,
+				F6D0EE9AF7A91C4F1A984BC9 /* NearbyKitTests */,
+				C4EEA4050E4381AAB28A2556 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5DE3F9D9DC68B28CA676813D /* Bluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				719AD5FE2CE838A2FD82791E /* BLECentralManager.swift */,
+				F07FA7AE5FB6D0B022359612 /* BLEPeripheralManager.swift */,
+				6B39BAA0CE5F7F5B53E25B57 /* BluetoothIdentifiers.swift */,
+				177EE63F60B32F7E61077844 /* NearbyDeviceStore.swift */,
+			);
+			path = Bluetooth;
+			sourceTree = "<group>";
+		};
+		7A8314F42F97C80C470D6445 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DEADDA4939C2CE61F5E0BC56 /* BluetoothView.swift */,
+				DCB4AB9B3379627C5B1521DF /* ContentView.swift */,
+				29380D7B9A000FE164327426 /* LocationView.swift */,
+				BD3DECB31BC944BA0F880FE8 /* UWBView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		98603225313CA792ED6E6350 /* UWB */ = {
+			isa = PBXGroup;
+			children = (
+				81106BEB4AC9C5C6F1A4BB61 /* MultipeerTokenChannel.swift */,
+				A1F94349A7FF1922B924CD86 /* UWBSessionManager.swift */,
+			);
+			path = UWB;
+			sourceTree = "<group>";
+		};
+		C4EEA4050E4381AAB28A2556 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				70B822CA0D447F1CDC15C858 /* NearbyKit.app */,
+				03F540EC52AA425D384F5044 /* NearbyKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CBD3C846F1AB2545621CB0EB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				654FE6C24DCC8FA128A94C3D /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F6D0EE9AF7A91C4F1A984BC9 /* NearbyKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				F34925393EEF951C4433FC1C /* DistanceCalculatorTests.swift */,
+				83C39038AA2BDB274765B46E /* NearbyDeviceStoreTests.swift */,
+				AA4CB380F52CD6B3540E20C1 /* PermissionStatusMapperTests.swift */,
+			);
+			path = NearbyKitTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2DD213554B0D7FF3515E6211 /* NearbyKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B0266462BDDCB8B06586AE5 /* Build configuration list for PBXNativeTarget "NearbyKitTests" */;
+			buildPhases = (
+				F663B6695A2FB5A6F44C763D /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7847C4CF0F855AF45C14D02B /* PBXTargetDependency */,
+			);
+			name = NearbyKitTests;
+			packageProductDependencies = (
+			);
+			productName = NearbyKitTests;
+			productReference = 03F540EC52AA425D384F5044 /* NearbyKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		65870E75F3C16EDB535B3306 /* NearbyKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA52EE7A58DCFC654508986F /* Build configuration list for PBXNativeTarget "NearbyKit" */;
+			buildPhases = (
+				4FEC249D57D6E71184BCB32B /* Build Kotlin shared framework */,
+				5BFA91FC943EF1DBC396EEE9 /* Sources */,
+				FF881355F81D98E36FBBD22C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NearbyKit;
+			packageProductDependencies = (
+			);
+			productName = NearbyKit;
+			productReference = 70B822CA0D447F1CDC15C858 /* NearbyKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2B05D9189B8366115B21F7B6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = BEDBF40C8A36FAFB4A4428AF /* Build configuration list for PBXProject "NearbyKit" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 50B1F6EDD4E74A903490B08D;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = C4EEA4050E4381AAB28A2556 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				65870E75F3C16EDB535B3306 /* NearbyKit */,
+				2DD213554B0D7FF3515E6211 /* NearbyKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF881355F81D98E36FBBD22C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E0C706AF0C5E5B5FF6B5CD2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4FEC249D57D6E71184BCB32B /* Build Kotlin shared framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Build Kotlin shared framework";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd \"$SRCROOT/..\"\n# Gradle/Kotlin-Native need an arm64 JVM on Apple Silicon or the\n# Kotlin Gradle plugin reads the host as x86_64 and silently\n# disables the iOS-simulator-arm64 build and test tasks. The\n# Oracle JDK on this machine is an x86_64 build running under\n# Rosetta; point at a native arm64 JDK if one is on hand.\nif [ -x /opt/homebrew/Cellar/openjdk@21/21.0.12.1/libexec/openjdk.jdk/Contents/Home/bin/java ]; then\n  export JAVA_HOME=/opt/homebrew/Cellar/openjdk@21/21.0.12.1/libexec/openjdk.jdk/Contents/Home\nfi\n./gradlew :shared:embedAndSignAppleFrameworkForXcode\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5BFA91FC943EF1DBC396EEE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9CFFF30BB8F944CAE0A0856 /* BLECentralManager.swift in Sources */,
+				AF84805BE08298A54CB65CBD /* BLEPeripheralManager.swift in Sources */,
+				FD0B2E06069045212C945D8E /* BluetoothIdentifiers.swift in Sources */,
+				2A4F499A14EB7EB07391E147 /* BluetoothView.swift in Sources */,
+				F00FB7F61EF6B13E5132C256 /* ContentView.swift in Sources */,
+				FED646F4DCC9B8BE268E7139 /* LocationManager.swift in Sources */,
+				FCD3998AAA4B9991CD664310 /* LocationView.swift in Sources */,
+				ABDDC30ADFBF474E3D43A5BE /* MultipeerTokenChannel.swift in Sources */,
+				283584C22A89CD8759DAC316 /* NearbyDeviceStore.swift in Sources */,
+				25BBD50251F5213C3CB58796 /* NearbyKitApp.swift in Sources */,
+				131EEEA66F0407B2A73DCC1E /* PermissionStatusMapper.swift in Sources */,
+				E6E4D4011CB6F83A24367455 /* PointOfInterest.swift in Sources */,
+				2E375D842F203D5D2D454DAC /* UWBSessionManager.swift in Sources */,
+				C1B484898E79A29295C1DEB0 /* UWBView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F663B6695A2FB5A6F44C763D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56BDEA0F4292C0DFBC17E649 /* DistanceCalculatorTests.swift in Sources */,
+				5C39BA1538406A0ADCD2AD9A /* NearbyDeviceStoreTests.swift in Sources */,
+				22F6169A58056B58E601A822 /* PermissionStatusMapperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7847C4CF0F855AF45C14D02B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65870E75F3C16EDB535B3306 /* NearbyKit */;
+			targetProxy = F0E69F7BF6C3A8868F3BC5DE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6E349621D8BFA785D9876794 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sonofnos.nearbykit.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NearbyKit.app/NearbyKit";
+			};
+			name = Debug;
+		};
+		6F7D2B11DB47C451283E7F86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = NearbyKit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sonofnos.nearbykit.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		8B59B677E8AD3A81387F1655 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = NearbyKit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sonofnos.nearbykit.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B324B9D46FFB83CD049F51F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../shared/build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E3ACA7CE68ABB15F9FB3CA07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../shared/build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		FAFF8AFC5C8ADD451557D5ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sonofnos.nearbykit.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NearbyKit.app/NearbyKit";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6B0266462BDDCB8B06586AE5 /* Build configuration list for PBXNativeTarget "NearbyKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E349621D8BFA785D9876794 /* Debug */,
+				FAFF8AFC5C8ADD451557D5ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		AA52EE7A58DCFC654508986F /* Build configuration list for PBXNativeTarget "NearbyKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B59B677E8AD3A81387F1655 /* Debug */,
+				6F7D2B11DB47C451283E7F86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BEDBF40C8A36FAFB4A4428AF /* Build configuration list for PBXProject "NearbyKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B324B9D46FFB83CD049F51F2 /* Debug */,
+				E3ACA7CE68ABB15F9FB3CA07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2B05D9189B8366115B21F7B6 /* Project object */;
+}
